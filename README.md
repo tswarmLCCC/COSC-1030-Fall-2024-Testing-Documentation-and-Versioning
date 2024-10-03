@@ -73,8 +73,11 @@ int main() {
 Tips for Effective Testing
 
 Test boundary cases: Consider inputs at the extremes of the valid range.
+
 Test error conditions: Check how your code handles invalid inputs or unexpected situations.
+
 Use a testing framework: While not strictly necessary for this level, consider using a testing framework like Google Test or Catch2 for more advanced features and organization.
+
 Write clear and concise tests: Make it easy for others to understand the purpose of each test.
 
 ## Contributing
