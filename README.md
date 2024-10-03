@@ -26,10 +26,10 @@ project_name/
 │   └── ...
 ```
 
-+ include/: Contains header files with declarations for classes, functions, and constants.
 + src/: Contains source files with the implementations of functions and classes.
 + tests/: Contains test files using assert statements to verify the correctness of the code.
-
++ docs/: Contains documentation about installation, usage, and contributing.
++ include/: Contains header files with declarations for classes, functions, and constants.  Note: We haven't studied object linking yet, but they are a great way to seperate your tests and I encourage to think about doing so when we cover that later in the program!
 
 ## Understanding Assert Statements
 
