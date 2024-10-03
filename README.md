@@ -8,6 +8,7 @@ Project Structure
 
 For a sophomore-level course, a simple project structure might suffice. Here's a basic template:
 
+```Sample Directory Structure
 project_name/
 ├── include/
 │   ├── header1.h
@@ -21,6 +22,8 @@ project_name/
 │   ├── test_header1.cpp
 │   ├── test_header2.cpp
 │   └── ...
+```
+
 include/: Contains header files with declarations for classes, functions, and constants.
 src/: Contains source files with the implementations of functions and classes.
 tests/: Contains test files using assert statements to verify the correctness of the code.
