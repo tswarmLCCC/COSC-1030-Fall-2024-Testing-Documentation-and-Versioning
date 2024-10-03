@@ -135,6 +135,8 @@ Write clearly and concisely: Avoid jargon and technical terms that might confuse
 Stay up-to-date: Update your documentation as your code evolves.
 Use tools: Consider using tools like Doxygen to generate documentation automatically from your code's comments.
 
+Markdown is a great formatting langauge to learn for documenation, and almost every modern stack supports it (including GitHub!).  A great getting started guide on markdown can be found at https://www.markdownguide.org/basic-syntax/
+
 ## Understanding Version Control
 
 Version control systems (VCS) are essential tools for managing changes to your code over time. They allow you to:
