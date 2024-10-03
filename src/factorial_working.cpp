@@ -1,6 +1,8 @@
+// source.cpp
+
 #include <iostream>
-#include <cassert>
 using namespace std;
+#include <cassert>
 
 int factorial(int n) {
     if (n == 0) {
@@ -8,22 +10,20 @@ int factorial(int n) {
     } else {
         return n * factorial(n - 1);
     }
-    return 0;
 }
+
 
 int main() {
    
    cout << "Testing started" << endl;
    
-   assert(factorial(1)  == 0);
-   cout << "Testing ended" << endl;
 
+   assert(factorial(1)  == 1);
+   assert(factorial(6)  == 720);
+
+   
    return 0;
 }
 
 
-
-
-
-// source.cpp
 
