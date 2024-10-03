@@ -1,10 +1,6 @@
 # Testing, Documentation, and Versioning
 
-## Understanding Assert Statements
-
-Assert statements are a powerful tool in C++ for debugging and testing. They are used to check conditions at runtime and, if the condition is false, terminate the program with an error message. This can be helpful for catching errors early in the development process.
-
-Project Structure
+## Project Structure
 
 Directories can be a great way to not only organize your code, but also help keep the logistics of your project in good order. 
 This sample structure gives us nice places for our code (src), code templates (include), tests, and documentation (doc).
@@ -30,9 +26,14 @@ project_name/
 │   └── ...
 ```
 
-include/: Contains header files with declarations for classes, functions, and constants.
-src/: Contains source files with the implementations of functions and classes.
-tests/: Contains test files using assert statements to verify the correctness of the code.
++ include/: Contains header files with declarations for classes, functions, and constants.
++ src/: Contains source files with the implementations of functions and classes.
++ tests/: Contains test files using assert statements to verify the correctness of the code.
+
+
+## Understanding Assert Statements
+
+Assert statements are a powerful tool in C++ for debugging and testing. They are used to check conditions at runtime and, if the condition is false, terminate the program with an error message. This can be helpful for catching errors early in the development process.
 
 ### Using Assert Statements
 
