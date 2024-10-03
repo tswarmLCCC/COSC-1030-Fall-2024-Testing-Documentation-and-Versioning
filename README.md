@@ -34,7 +34,7 @@ include/: Contains header files with declarations for classes, functions, and co
 src/: Contains source files with the implementations of functions and classes.
 tests/: Contains test files using assert statements to verify the correctness of the code.
 
-## Using Assert Statements
+### Using Assert Statements
 
 Include the cassert header: This header provides the assert macro.
 Place assert statements in appropriate locations: Typically, you'll want to test the output of functions or the values of variables after certain operations.
@@ -115,9 +115,8 @@ C++
 int factorial(int n) {
     // ... implementation ...
 }
-Use code with caution.
 
-External Documentation
+### External Documentation
 
 README files:
 
