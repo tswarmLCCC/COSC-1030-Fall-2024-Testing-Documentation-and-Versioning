@@ -1,1 +1,3 @@
 a.out
+.vscode/tasks.json
+bin/test_factorial.exe

@@ -210,6 +210,56 @@ git push -u origin main
 
 By understanding and using version control effectively, you can improve the efficiency, collaboration, and maintainability of your software development projects.
 
+## Makefiles
+A Makefile is a configuration file used by the make utility to automate the build process of software. It specifies dependencies between files and the commands needed to update them. This can be particularly useful for large projects with many source files and dependencies.
+
+Basic Structure
+
+A Makefile typically consists of rules, variables, and comments. A rule defines a target (e.g., an executable or object file) and the commands needed to create it. Variables can be used to store values that are used throughout the Makefile.
+
+Example Makefile
+
+Makefile
+# Variables
+CC = g++
+CFLAGS = -Wall -g
+
+# Rules
+main: main.o hello.o
+    $(CC) $(CFLAGS) main.o hello.o -o main
+
+main.o: main.cpp
+    $(CC) $(CFLAGS) -c main.cpp
+
+hello.o: hello.cpp
+    $(CC) $(CFLAGS) -c hello.cpp
+Use code with caution.
+
+Explanation:
+
+Variables:
+CC: Specifies the C++ compiler (e.g., g++).
+CFLAGS: Sets compiler flags for warnings and debugging.
+Rules:
+The main rule specifies that the main executable depends on the main.o and hello.o object files. The command to create main is $(CC) $(CFLAGS) main.o hello.o -o main.
+The main.o and hello.o rules specify that these object files depend on their respective source files (main.cpp and hello.cpp). The command to create an object file is $(CC) $(CFLAGS) -c <source_file>.
+How Make Works
+
+When you run make in your terminal, it examines the Makefile and determines which targets need to be updated based on their dependencies and modification times. If a target is out of date, the corresponding commands are executed to rebuild it.
+
+Common Uses of Makefiles
+
+Building complex projects: Makefiles can handle projects with many source files and dependencies.
+Automating tasks: You can define rules to automate tasks like cleaning up temporary files or running tests.
+Managing dependencies: Makefiles can help you keep track of dependencies between files and ensure that the correct files are rebuilt when necessary.
+Cross-platform development: Makefiles can be used to create build environments for different operating systems.
+
+### Useful resources
+
+https://www.youtube.com/watch?v=zeEMISsjO38
+
+https://makefiletutorial.com/
+
 ## Contributing
 
 Please feel free to contact me at my work email - tswarm@lccc.wy.edu
