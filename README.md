@@ -174,25 +174,35 @@ Rollback: Revert to previous versions of your code if needed.
 
 ### Example (Using Git):
 
-```Initialize a new Git repository
+Initialize a new Git repository
+
+```
 git init
 ```
 
-```Stage all changes
+Stage all changes
+
+```
 git add .
 ```
 
-```Commit the changes
+Commit the changes
+
+```
 git commit -m "Initial commit"
 ```
 
-```Commit the changes
+Commit the changes
+
+```
 git commit -m "Initial commit"
 ```
 
-```Push changes to a remote repository
-+ git remote add origin https://github.com/your-username/your-project.git
-+ git push -u origin main
+Push changes to a remote repository
+
+```
+git remote add origin https://github.com/your-username/your-project.git
+git push -u origin main
 ```
 
 By understanding and using version control effectively, you can improve the efficiency, collaboration, and maintainability of your software development projects.
