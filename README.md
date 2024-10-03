@@ -13,7 +13,7 @@ project_name/
 │   ├── header2.h
 │   └── ...
 ├── src/
-│   ├── main.cpp
+│   ├── main.cpp 
 │   ├── source1.cpp
 │   └── ...
 ├── tests/
