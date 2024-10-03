@@ -1,44 +1,72 @@
-# Software Project Template
+# Testing, Documentation, and Versioning
 
-This Template is a boiler plate example of using Github, source and documenation directories, unit tests, and depedencies.  
+## Understanding Assert Statements
 
-Some useful commands
+Assert statements are a powerful tool in C++ for debugging and testing. They are used to check conditions at runtime and, if the condition is false, terminate the program with an error message. This can be helpful for catching errors early in the development process.
 
-## Setup
+Project Structure
 
-```bash
-git clone https://github.com/tswarmLCCC/AIXX_Rag_EssayGrade.git
+For a sophomore-level course, a simple project structure might suffice. Here's a basic template:
+
+project_name/
+├── include/
+│   ├── header1.h
+│   ├── header2.h
+│   └── ...
+├── src/
+│   ├── main.cpp
+│   ├── source1.cpp
+│   └── ...
+├── tests/
+│   ├── test_header1.cpp
+│   ├── test_header2.cpp
+│   └── ...
+include/: Contains header files with declarations for classes, functions, and constants.
+src/: Contains source files with the implementations of functions and classes.
+tests/: Contains test files using assert statements to verify the correctness of the code.
+
+## Using Assert Statements
+
+Include the cassert header: This header provides the assert macro.
+Place assert statements in appropriate locations: Typically, you'll want to test the output of functions or the values of variables after certain operations.
+Write meaningful error messages: If an assertion fails, provide a clear and informative message that helps identify the problem.
+Example:
+
+
+```C++
+// header.h
+int factorial(int n);
+
+// source.cpp
+int factorial(int n) {
+    if (n == 0) {
+        return 1;
+    } else {
+        return n * factorial(n - 1);
+    }
+}
+
+// test_factorial.cpp
+#include <cassert>
+#include "header.h"
+
+int main() {
+    assert(factorial(0) == 1);
+    assert(factorial(1) == 1);
+    assert(factorial(5) == 120);
+
+    // ... more tests ...
+
+    return 0;
+}
 ```
 
-This runs well on Python 3.9.  The requirements can be found in requirements.txt in the root directory.  They can be installed with pip:
+Tips for Effective Testing
 
-```bash
-pip install -r requirements.txt
-```
-
-## Usage
-
-These are important scripts to run and/or use for major functionality:
-
-```bash
-streamlit run 01_Chat.py
-```
-
-Or from a VM:
-```bash
-c:\Python\Python39\python.exe -m venv c:\env\streamlit_rag
-C:\env\streamlit_rag\Scripts\Activate.ps1
-pip install-r requirements.txt
-```
-
-```bash
-PS C:\dev\StreamLit Rag> C:\env\streamlit_rag\Scripts\Activate.ps1
-(streamlit_rag) PS C:\dev\StreamLit Rag> streamlit run .\ollama_streamlit_demos\01_Chat.py
-```
-
-Navigate to the URL provided by Streamlit in your browser to interact with the app.
-
-**NB: Make sure you have downloaded [Ollama](https://ollama.com/) to your system.**
+Test boundary cases: Consider inputs at the extremes of the valid range.
+Test error conditions: Check how your code handles invalid inputs or unexpected situations.
+Use a testing framework: While not strictly necessary for this level, consider using a testing framework like Google Test or Catch2 for more advanced features and organization.
+Write clear and concise tests: Make it easy for others to understand the purpose of each test.
 
 ## Contributing
 
@@ -46,4 +74,4 @@ Please feel free to contact me at my work email - tswarm@lccc.wy.edu
 
 ## Acknowledgments
 
-👏 Several Open Source projects for examples of good practice.
+
