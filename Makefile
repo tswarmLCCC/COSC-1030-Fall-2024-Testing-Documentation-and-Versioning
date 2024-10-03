@@ -25,5 +25,5 @@ factorial_working_cpp:
 	$(CC) $(SRC_DIR)/$(factorial_working).cpp -o $(BIN_DIR)/$(factorial_working)_cpp	
 
 clean:
-	rm -f $(BIN_DIR)/*
+	rm -f $(BIN_DIR)/* 
 
