@@ -6,7 +6,9 @@ Assert statements are a powerful tool in C++ for debugging and testing. They are
 
 Project Structure
 
-For a sophomore-level course, a simple project structure might suffice. Here's a basic template:
+Directories can be a great way to not only organize your code, but also help keep the logistics of your project in good order. 
+This sample structure gives us nice places for our code (src), code templates (include), tests, and documentation (doc).
+This can help compartmentalize your work and keep only the aspects that your working on in your view at any given time!
 
 ```Sample Directory Structure
 project_name/
@@ -21,6 +23,10 @@ project_name/
 ├── tests/
 │   ├── test_header1.cpp
 │   ├── test_header2.cpp
+│   └── ...
+├── docs/
+│   ├── module1.txt
+│   ├── usage.txt
 │   └── ...
 ```
 
