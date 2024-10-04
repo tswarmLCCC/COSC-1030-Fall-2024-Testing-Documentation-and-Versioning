@@ -13,10 +13,11 @@ int factorial(int n) {
 
 int main() {
    
-   cout << "Testing started" << endl;
-   
-   assert(factorial(1)  == 0);
-   cout << "Testing ended" << endl;
+   int arg;
+   cout << "Input a number!:" << endl;
+   cin >> arg;
+   //assert(factorial(1)  == 1);
+   cout <<  "Factorial " << arg << " is " << factorial(arg) << endl;
 
    return 0;
 }
