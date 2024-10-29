@@ -8,7 +8,7 @@ using namespace std;
 //function to calculate the factorial of a number, this could be moved to another file via headers!
 int factorial(int n) {
     if (n == 0) {
-        return 0;
+        return 0;  // this is wrong, should be 1
     } else {
         return n * factorial(n - 1);
     }
